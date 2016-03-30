@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.einat.oc.tests.OpenEndTestFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerEdit"
+            android:layout_gravity="left|top"
+            android:hint="type your answer here" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check"
+            android:id="@+id/checkBtn"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</FrameLayout>

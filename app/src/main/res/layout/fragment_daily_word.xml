@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.einat.oc.DailyWordFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wordLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"
+            android:id="@+id/characterText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="200dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinyinText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:hint="wo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meaningText"
+            android:layout_gravity="center_horizontal"
+            android:hint="pronoun I, me, my"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got It"
+            android:id="@+id/btnGotIt"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/countDownLayout"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countDownText"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:hint="you have 2:36h till next quiz" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pp quiz right now!"
+                android:id="@+id/btnQuizNow"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="review word"
+                android:id="@+id/btnReview"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
