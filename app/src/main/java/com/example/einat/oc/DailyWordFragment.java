@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.einat.oc.tests.TestFragment;
 import com.example.einat.oc.utils.NotificationHelper;
 import com.example.einat.oc.utils.QuizCountDownTimer;
+import com.example.einat.oc.wordsDB.DbAccess;
 
 
 /**
@@ -31,6 +32,7 @@ public class DailyWordFragment extends Fragment implements View.OnClickListener 
     private Button btnGotIt;
     private Context context;
     private QuizCountDownTimer quizCountDownTimer;
+    DbAccess dbAccess = DbAccess.getInstance(context);
 
     public DailyWordFragment() {
         // Required empty public constructor
@@ -44,6 +46,11 @@ public class DailyWordFragment extends Fragment implements View.OnClickListener 
         initializeViews(root);
         wordLayout.setVisibility(View.GONE);
         quizCountDownTimer = new QuizCountDownTimer(10000, 1000, counter, getContext());
+
+        context = getContext();
+        DbAccess dbAccess = DbAccess.getInstance(context);
+        dbAccess.open();
+
         return root;
     }
 
